@@ -2479,7 +2479,7 @@ p.center {
   clear: both;
   padding: 7px 0;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   text-align: center;
   width: 100%;
   background-color: #fff;
