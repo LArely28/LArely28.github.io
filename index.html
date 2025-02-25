@@ -480,6 +480,61 @@
         <!-- END WEDDING DETAILS SECTION -->
 
 
+        <!-- BEGIN MENU SECTION -->
+        <section class="menu-section no-padding-top no-padding-bottom">
+            <div id="menu-image" class="half-img"></div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 offset-xl-6 col-lg-8 offset-lg-4 menu-wrapper">
+                        <div class="neela-style">
+                            <div class="menu-top-flowers"></div>
+
+                            <h2 class="section-title-lg">Mesa <br> de Regalos</h2>
+
+
+                            <ul class="menu-items">
+                                <li>
+                                    <p>
+                                        Tu presencia es nuestro mejor regalo. Pero si deseas tener un detalle, hemos habilitado una mesa de regalos en Liverpool. <br>
+
+                                        También puedes apoyarnos con una contribución vía transferencia. <br> 
+                                        Lo más importante para nosotros es compartir este día tan especial contigo. <br>
+                                        ¡Gracias por ser parte de nuestra historia!
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <h3>Liverpool</h3>
+
+                                    <h4 class="text-white mt-3">
+                                        <a class="text-white" href="https://www.liverpool.com.mx/tienda/home"
+                                            target="_blank"> Visitar mesa de regalo </a>
+                                    </h4>
+                                </li>
+
+                                <li>
+                                    <h3>Transferencia Bancaria</h3>
+                                    <p>Titular: Néstor Juárez
+                                        <br>
+                                        Institución: Banco Azteca
+                                        <br>
+                                        Cuenta: 96890101652012
+                                        <br>
+                                        CLABE: 127540001016520123
+                                    </p>
+                                </li>
+                            </ul>
+
+                            <div class="menu-bottom-flowers"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END MENU SECTION -->
+
+
         <!-- BEGIN CONTACTS SECTION -->
         <section id="rsvp" class="section-bg-color extra-padding-section">
             <div class="container">
@@ -602,55 +657,57 @@
     <script src="js/scripts.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-          const form = document.getElementById("form-rsvp");
-          const statusMessage = document.querySelector(".form_status_message"); // Mensaje de estado
-      
-          form.addEventListener("submit", function (event) {
-            event.preventDefault(); // Evita el envío predeterminado del formulario
-      
-            // Obtener valores del formulario
-            const nombre = document.getElementById("name").value.trim();
-            const numInvitados = document.getElementById("num_guests").value;
-            const mensaje = document.getElementById("message").value.trim();
-      
-            // Resetear mensaje de error
-            statusMessage.innerHTML = "";
-            statusMessage.style.color = "red"; // Color rojo para los errores
-      
-            // Validar que los campos obligatorios no estén vacíos
-            if (nombre === "" || numInvitados === "0") {
-              statusMessage.innerHTML = "❌ Por favor, completa todos los campos obligatorios.";
-              return;
-            }
-      
-            // Número de WhatsApp al que se enviará el mensaje (reemplazar)
-            const telefono = "527776001153"; // Número con código de país
-      
-            // Crear el mensaje base
-            let mensajeWhatsApp = `Hola, confirmo mi asistencia a la boda.\n\n - Nombre: ${nombre}\n - Número de invitados: ${numInvitados}`;
-      
-            // Agregar mensaje solo si el usuario escribió algo
-            if (mensaje !== "") {
-              mensajeWhatsApp += `\n - Comentarios: ${mensaje}`;
-            }
-      
-            // Codificar el mensaje para la URL de WhatsApp
-            const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensajeWhatsApp)}`;
-      
-            // Cambiar el estado a éxito
-            statusMessage.style.color = "green";
-            statusMessage.innerHTML = "✅ Mensaje preparado. Redirigiendo a WhatsApp...";
-      
-            // Limpiar el formulario después de 1 segundo
-            setTimeout(() => {
-              form.reset(); // Limpia los campos del formulario
-              window.open(url, "_blank"); // Abre WhatsApp
-              statusMessage.innerHTML = ""; // Limpia el mensaje de estado después de enviar
-            }, 1000);
-          });
+            const form = document.getElementById("form-rsvp");
+            const statusMessage = document.querySelector(".form_status_message"); // Mensaje de estado
+
+            form.addEventListener("submit", function (event) {
+                event.preventDefault(); // Evita el envío predeterminado del formulario
+
+                // Obtener valores del formulario
+                const nombre = document.getElementById("name").value.trim();
+                const numInvitados = document.getElementById("num_guests").value;
+                const mensaje = document.getElementById("message").value.trim();
+
+                // Resetear mensaje de error
+                statusMessage.innerHTML = "";
+                statusMessage.style.color = "red"; // Color rojo para los errores
+
+                // Validar que los campos obligatorios no estén vacíos
+                if (nombre === "" || numInvitados === "0") {
+                    statusMessage.innerHTML = "❌ Por favor, completa todos los campos obligatorios.";
+                    return;
+                }
+
+                // Número de WhatsApp al que se enviará el mensaje (reemplazar)
+                const telefono = "527776001153"; // Número con código de país
+
+                // Crear el mensaje base
+                let mensajeWhatsApp =
+                    `Hola, confirmo mi asistencia a la boda.\n\n - Nombre: ${nombre}\n - Número de invitados: ${numInvitados}`;
+
+                // Agregar mensaje solo si el usuario escribió algo
+                if (mensaje !== "") {
+                    mensajeWhatsApp += `\n - Comentarios: ${mensaje}`;
+                }
+
+                // Codificar el mensaje para la URL de WhatsApp
+                const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensajeWhatsApp)}`;
+
+                // Cambiar el estado a éxito
+                statusMessage.style.color = "green";
+                statusMessage.innerHTML = "✅ Mensaje preparado. Redirigiendo a WhatsApp...";
+
+                // Limpiar el formulario después de 1 segundo
+                setTimeout(() => {
+                    form.reset(); // Limpia los campos del formulario
+                    window.open(url, "_blank"); // Abre WhatsApp
+                    statusMessage.innerHTML =
+                        ""; // Limpia el mensaje de estado después de enviar
+                }, 1000);
+            });
         });
-      </script>
-      
+    </script>
+
 
 
 
