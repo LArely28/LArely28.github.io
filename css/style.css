@@ -3224,6 +3224,22 @@ p.center {
   -moz-opacity: 0.5;
   opacity: 0.5;
 }
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.map-container iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  border: 0;
+}
+
+
 .map-info-container .info-wrapper .location-info h4 small {
   display: block;
   font-weight: 400;

@@ -67,27 +67,8 @@
                                     <li><a href="#hero">Home</a></li>
                                     <li><a href="#our-story-title">Nuestra Historia</a></li>
                                     <li><a href="#the-wedding">Invitacion</a></li>
-                                    <li><a href="#the-wedding">Mesa de Regalos</a></li>
-
-
-                                    <!-- <li class="dropdown">
-                                        <a href="#the-wedding" data-toggle="dropdown" data-hover="dropdown">The
-                                            Wedding<b class="caret"></b></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#the-wedding">Invite</a></li>
-                                            <li><a href="#location">Location</a></li>
-                                            <li><a href="#bmiadsgmen">Bridesmaids & Groomsmen</a></li>
-                                            <li><a href="#progress">Gift Registry</a></li>
-                                            <li class="dropdown-submenu">
-                                                <a href="#">Another Menu</a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="#">Another Menu</a></li>
-                                                    <li><a href="#">Another Menu</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li> -->
-
+                                    <li><a href="#gift-section">Mesa de Regalos</a></li>
+                                    <li><a href="#confirmacion-form">Confirmación</a></li>
                                 </ul>
 
                                 <button id="nav-mobile-btn"><i class="fas fa-bars"></i></button>
@@ -417,12 +398,17 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <h2 class="section-title">Location</h2>
+                        <h2 class="section-title">Ubicación</h2>
                     </div>
+                    <div class="map-container mb-4">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5138.177593982583!2d-99.22865708699544!3d18.912573034786544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cddfa8458eeabf%3A0x432e0c3c0d33784d!2sC.%2016%20de%20Septiembre%2064%2C%20Acapantzingo%2C%2062440%20Cuernavaca%2C%20Mor.!5e0!3m2!1ses!2smx!4v1740529398539!5m2!1ses!2smx"
+                            width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
                 </div>
             </div>
-
-            <div class="gmap" id="map_canvas_full"></div>
 
             <div class="map_pins_full" data-animation-direction="fade" data-animation-delay="200">
                 <ul class="pins">
@@ -467,7 +453,7 @@
                     <div class="col-md-4 wedding-details" data-animation-direction="from-bottom"
                         data-animation-delay="700">
                         <i class="icon-champagne-glasses"></i>
-                        <h4>Recepción<small>07:00 PM - 01:00 PM</small></h4>
+                        <h4>Recepción<small>04:00 PM</small></h4>
                         <p>
                             La Casa de Juan <br>
                             C. 16 de Septiembre #64 <br>
@@ -481,7 +467,7 @@
 
 
         <!-- BEGIN MENU SECTION -->
-        <section class="menu-section no-padding-top no-padding-bottom">
+        <section class="menu-section no-padding-top no-padding-bottom" id="gift-section">
             <div id="menu-image" class="half-img"></div>
 
             <div class="container">
@@ -496,9 +482,10 @@
                             <ul class="menu-items">
                                 <li>
                                     <p>
-                                        Tu presencia es nuestro mejor regalo. Pero si deseas tener un detalle, hemos habilitado una mesa de regalos en Liverpool. <br>
+                                        Tu presencia es nuestro mejor regalo. Pero si deseas tener un detalle, hemos
+                                        habilitado una mesa de regalos en Liverpool. <br>
 
-                                        También puedes apoyarnos con una contribución vía transferencia. <br> 
+                                        También puedes apoyarnos con una contribución vía transferencia. <br>
                                         Lo más importante para nosotros es compartir este día tan especial contigo. <br>
                                         ¡Gracias por ser parte de nuestra historia!
                                     </p>
@@ -543,7 +530,7 @@
                     <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2  col-xxl-6 offset-xxl-3"
                         data-animation-direction="from-top" data-animation-delay="300">
 
-                        <div class="form-wrapper flowers neela-style">
+                        <div class="form-wrapper flowers neela-style" id="confirmacion-form">
                             <h1 class="section-title">Confirma tu asistencia</h1>
 
                             <form id="form-rsvp" method="post" action="#">
