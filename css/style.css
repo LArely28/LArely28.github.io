@@ -1755,7 +1755,7 @@ p.center {
   z-index: -1;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url('/images/descarga.svg');
+  /* background-image: url('/images/descarga.svg'); */
   background-size: contain;
   -khtml-opacity: 0.9;
   -moz-opacity: 0.9;
@@ -1765,7 +1765,7 @@ p.center {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  filter:  brightness(1%) opacity(100%) saturate(100%) invert(100%);
+  /* filter:  brightness(1%) opacity(100%) saturate(100%) invert(100%); */
 }
 .hero-wrapper::after {
   left: auto;
