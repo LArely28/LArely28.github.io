@@ -2634,40 +2634,12 @@ p.center {
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-.timeline .template-1 .image-1,
-.timeline .template-2 .image-1 {
-  grid-column: 1/span 14;
-  grid-row: 1;
-  z-index: 1;
-  max-width: 100%;
-}
-.timeline .template-1 .image-1 img,
-.timeline .template-2 .image-1 img {
-  border: 10px solid #fff;
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.timeline .template-1 .image-2,
-.timeline .template-2 .image-2 {
-  grid-column: 12/-1;
-  grid-row: 1;
-  padding-top: 25%;
-  z-index: 1;
-  max-width: 100%;
-}
-.timeline .template-1 .image-2 img,
-.timeline .template-2 .image-2 img {
-  border: 10px solid #fff;
-  width: 100%;
-  height: auto;
-  display: block;
-}
+
 .timeline .template-1 .description-wrapper,
 .timeline .template-2 .description-wrapper {
   grid-column: 3/span 12;
   grid-row: 1;
-  margin-top: 100%;
+  margin-top: 50%;
 }
 .timeline .template-2::after {
   bottom: 20px;
@@ -2676,35 +2648,11 @@ p.center {
   top: 90px;
   right: 15%;
 }
-.timeline .template-2 .videoEmbed {
-  grid-column: 1/span 16;
-  grid-row: 1;
-  z-index: 3;
-  max-width: 100%;
-}
-.timeline .template-2 .videoEmbed img,
-.timeline .template-2 .videoEmbed iframe,
-.timeline .template-2 .videoEmbed embed,
-.timeline .template-2 .videoEmbed object {
-  border: 10px solid #fff;
-  background: #fff;
-  width: 100%;
-  display: block;
-}
-.timeline .template-2 .image-1 {
-  grid-column: 13/-1;
-  padding-top: 35%;
-  z-index: 1;
-}
-.timeline .template-2 .image-2 {
-  grid-column: 2/span 12;
-  padding-top: 65%;
-  z-index: 2;
-}
+
 .timeline .template-2 .description-wrapper {
   grid-column: 11/span 12;
   grid-row: 1;
-  margin-top: 150%;
+  margin-top: 50%;
 }
 
 .gallery-container {
@@ -6186,7 +6134,7 @@ textarea.form-control {
   .timeline .template-1 .description-wrapper {
     grid-column: 2/24;
     grid-row: 2;
-    margin-top: -5%;
+    margin-top: 30%;
   }
   .timeline .template-2 .date {
     top: 50px;
@@ -6469,7 +6417,7 @@ textarea.form-control {
   }
 
   .timeline .template-1 .date {
-    top: -10px;
+    top: -50px;
     padding: 20px 16px;
   }
   .timeline .template-1 .date .neela-style {
