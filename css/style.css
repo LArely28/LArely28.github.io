@@ -1181,7 +1181,7 @@ p.center {
 }
 
 .extra-padding-section {
-  padding: 50px 0;
+  padding: 250px 0;
 }
 
 .extra-padding-top {
@@ -5978,9 +5978,9 @@ textarea.form-control {
   }
 
   .blog-listing .item .date,
-.blog-listing .post-content .date,
-.blog-main .item .date,
-.blog-main .post-content .date {
+  .blog-listing .post-content .date,
+  .blog-main .item .date,
+  .blog-main .post-content .date {
     font-size: 15pt;
     padding: 6px 20px;
   }
@@ -6351,12 +6351,24 @@ textarea.form-control {
     height: 250px;
     width: 250px;
   }
+  .half-img {
+    position: relative;
+    height: 350px;
+    width: 100%;
+    background-attachment: fixed;
+  }
 }
 @media (max-width: 480px) {
   .hero-wrapper::before {
     left: -100px;
   }
 
+  .half-img {
+    position: relative;
+    height: 350px;
+    width: 100%;
+    background-attachment: fixed;
+  }
   .hero-wrapper::after {
     right: -100px;
   }
